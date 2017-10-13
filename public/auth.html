@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107354907-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments)};
+			gtag('js', new Date());
+
+			gtag('config', 'UA-107354907-1');
+		</script>
+		<title>Regain.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAGc82642sH-oWh6m2bGjkttVdyYY-NWQU",
+            authDomain: "regain-c519d.firebaseapp.com",
+            databaseURL: "https://regain-c519d.firebaseio.com",
+            projectId: "regain-c519d",
+            storageBucket: "regain-c519d.appspot.com",
+            messagingSenderId: "1094055386122"
+        };
+        firebase.initializeApp(config);
+        </script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+        <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+
+    <script type="text/javascript">
+    // FirebaseUI config.
+    var uiConfig = {
+      signInSuccessUrl: 'signedin.html',
+      signInOptions: [
+        // Leave the lines as is for the providers you want to offer your users.
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        firebase.auth.EmailAuthProvider.PROVIDER_ID
+      ],
+      // Terms of service url.
+      tosUrl: '<your-tos-url>'
+    };
+
+    // Initialize the FirebaseUI Widget using Firebase.
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // The start method will wait until the DOM is loaded.
+    ui.start('#firebaseui-auth-container', uiConfig);
+  </script>
+
+	</head>
+	<body>
+
+            <h1>Welcome to My Awesome App</h1>
+            <div id="firebaseui-auth-container"></div>
+
+
+		<!-- Scripts -->
+
+			<Script src="assets/js/app.js"><</Script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107354907-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments) };
+		gtag('js', new Date());
+
+		gtag('config', 'UA-107354907-1');
+	</script>
+
+	<!-- Common HTML Header Components -->
+	<title>Regain.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Stylesheet Linking -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+	<link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body onkeypress="commandPrompt()">
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo">
+			<a href="index.html">Regain
+			</a>
+			<span id="byFaceFresh" class="animated slideInUp">by FACEFRESH</span>
+		</div>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a id="demo01" href="#animatedModal">Login</a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<div id="front_and_centre" class="banner full">
+		<article>
+			<img id="backgroundImage" src="assets/images/unsplash001.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<div id="mainElements"> <!-- Main TIME and SUB-TITLE Area -->
+						<h2 id="idtime"></h2>
+						<p id="subTitle"></p>
+						<div id="functionResponse"></div>
+					</div>
+					<div id="commandPromptArea" style="visibility: hidden;"> <!-- Command Prompt Area -->
+						<input type="text" id="commandPromptInput">
+						<p id="testButton">Test Button</p>
+					</div>
+				</header>
+			</div>
+		</article>
+	</div>
+
+
+
+	<!-- Login Modal -->
+	<div id="animatedModal">
+
+		<div class="login-flex-container">
+			<div class="login-flex-item">
+				<div id="closebt-container" class="close-animatedModal">
+					<i class="closebt icon ion-ios-close-outline icon-white icon-large icon-centre"></i>
+				</div>
+				<h1>Login</h1>
+				<p>Some instructions here.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<!-- <footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; FaceFresh Ltd. All rights reserved.
+		</div>
+	</footer> -->
+
+	<!-- Firebase -->
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
+	<Script src="assets/js/app.js"></Script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/animatedModal.min.js"></script>
+
+	<script type="text/javascript">
+		$("#demo01").animatedModal();
+
+		// ** Live (Local Server) Time **
+		$(function () {
+			//on page load
+			setTimeout("displaytime()", 1000);
+		})
+	</script>
+
+</body>
+
+</html>

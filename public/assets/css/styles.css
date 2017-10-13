@@ -1,0 +1,73 @@
+.icon-white{ color: white; }
+
+.icon-large{ font-size: 2.5em; }
+
+.icon-centre{ text-align: center; }
+
+.login-flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: lightgrey; */
+}
+
+.login-flex-item {
+    background-color: cornflowerblue;
+    /* width: 400px; */
+    /* height: 700px; */
+    /* margin: 10px; */
+    padding: 30px;
+    margin-top:50px;
+}
+
+
+
+/* Background Image */
+
+html, body{
+    height: 100%;
+  }
+  body { 
+              background-image: url(https://firebasestorage.googleapis.com/v0/b/regain-c519d.appspot.com/o/backgroundImages%2FcurrentBackgroundImage.jpg?alt=media&token=486babb4-bded-440b-8b46-de8c6fabddbe) ;
+              background-position: center center;
+              background-repeat:  no-repeat;
+              background-attachment: fixed;
+              background-size:  cover;
+              background-color: #999;
+    
+  }
+  
+  div, body{
+    margin: 0;
+    padding: 0;
+    font-family: exo, sans-serif;
+    
+  }
+  .wrapper {
+    height: 100%; 
+    width: 100%; 
+  }
+  
+  .message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; 
+    height:45%;
+    bottom: 0; 
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.5em;
+  }
+  
+  
+  

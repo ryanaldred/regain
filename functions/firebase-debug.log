@@ -1,0 +1,23 @@
+[debug] [2017-10-06T08:11:16.009Z] ----------------------------------------------------------------------
+[debug] [2017-10-06T08:11:16.011Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-10-06T08:11:16.012Z] CLI Version:   3.12.0
+[debug] [2017-10-06T08:11:16.012Z] Platform:      darwin
+[debug] [2017-10-06T08:11:16.012Z] Node Version:  v6.9.5
+[debug] [2017-10-06T08:11:16.012Z] Time:          Fri Oct 06 2017 09:11:16 GMT+0100 (BST)
+[debug] [2017-10-06T08:11:16.012Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-06T08:11:16.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-06T08:11:16.030Z] > authorizing via signed-in user
+[debug] [2017-10-06T08:11:16.032Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-06T08:11:16.032Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/4U2YfmB2e4b26S9KplFZvChBiU1OuUJvsnCMQM263xo',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Oct 06 2017 09:11:16 GMT+0100 (BST)
+[debug] [2017-10-06T08:11:16.277Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-06T08:11:16.281Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/regain-c519d  
+ Fri Oct 06 2017 09:11:16 GMT+0100 (BST)
+[debug] [2017-10-06T08:11:17.160Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-06T08:11:17.161Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/regain-c519d/tokens  
+ Fri Oct 06 2017 09:11:17 GMT+0100 (BST)
